@@ -16,7 +16,7 @@ function SinUpForm(props) {
   const history = useHistory();
   const handelCreaAccount = (event) => {
     // alert("fucl");
-    fetch("http://localhost:8000/register", {
+    fetch("https://signin-131.herokuapp.com/register", {
       method: "POST",
       body: JSON.stringify({
         first_name: firstName,
@@ -35,7 +35,7 @@ function SinUpForm(props) {
       .then((res) => {
         if (res.status === 200) {
           alert("login success");
-          history.push('/main')
+          history.push("/main");
         } else {
           alert("login failed try again ");
         }

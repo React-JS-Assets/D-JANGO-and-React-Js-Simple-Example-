@@ -24,7 +24,7 @@ const MainPage = () => {
     const classes=useStyles();
     const logout=()=>{
             // alert("fucl");
-            fetch("http://localhost:8000/logoutUser", {
+            fetch("https://signin-131.herokuapp.com/logoutUser", {
               method: "GET",
             })
               .then((res) => {

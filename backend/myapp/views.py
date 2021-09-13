@@ -74,7 +74,9 @@ def logoutUser(request):
 def register(request):
     if request.method == "POST":
         # userdata = json.loads(request.data)
-        print(request.data)
+        # print(request.data)
+        # serializer = UserSerializer(data=request.data)
+        # print("serializer ", serializer.data)
         data = request.data
         # Attempt to create new user
         try:

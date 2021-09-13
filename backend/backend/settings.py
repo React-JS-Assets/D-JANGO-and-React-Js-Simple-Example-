@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ba_6^g5z^#fai4)g^bz5tv9f-seuad@_@qr-_4uneaooggcc@v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['signin-131.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -58,7 +58,7 @@ MIDDLEWARE = [
     # 'corsheaders.middleware.CorsMiddleware',
 
 ]
-CORS_ALLOWED_ORIGINS = ['http://localhost:3000']
+CORS_ALLOWED_ORIGINS = ['https://signin-131.netlify.app']
 CORS_ALLOW_METHODS = [
     'DELETE',
     'GET',

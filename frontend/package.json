@@ -2,7 +2,7 @@
   "name": "sin-in-and-up-form",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8000",
+  "proxy": "https://signin-131.herokuapp.com",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
